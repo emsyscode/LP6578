@@ -8,23 +8,6 @@ Of course, a library can be created for this purpose! But I won't
 take the time to do that, I'll leave it up to you!
 */
 
-/*
- * Note: DD ... Direction data
- * •CCB address...............46H
- * •D1 to D136.................Display data (At the LC75834JE, the display data D33 to D36, D69 to D72, D105 to D108, D133 to D136 must be set to 0.
- * •P0 to P3......................Segment output port/general-purpose output port switching control data
- * •DR..............................1/2-bias drive or 1/3-bias drive switching control data
- * •SC...............................Segments on/off control data
- * •BU..............................Normal mode/power-saving mode control dataNo. 5597-8/18LC75834E, 75834W, 75834JE
- * 
- * 0, 0, 0, P0, P1, P2, P3, DR, SC, BU, DD, DD;
- */
-
-//#include <Arduino.h>
-//#include <stdio.h>
-////#include <math.h>
-//#include <stdbool.h>
-
 void send_char(unsigned char a);
 void send_data(unsigned char a);
 void segments();
